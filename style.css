@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gowun Batang', serif;
+  text-align: center;
+  color: #826E6C;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  
+}
+
+.all-group {
+  width: 100%;
+  max-width: 800px;
+  height: 900px; 
+  border: 1px solid #4a4e61;
+  margin: auto;
+  padding: 20px;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+
+/* header */
+
+.header {
+  text-align: center;
+  color: #705F5D;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 20px 0;
+  animation: titleAction 2000ms ease-in-out 1 alternate;
+}
+
+@keyframes titleAction {
+  from {
+    transform: translateY(-100px);
+    opacity: 0.5;
+  }
+}
+
+
+.desc {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+
+/* main-img */
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  height: 450px;
+  border: 1px solid#4a4e61;
+  margin-bottom: 20px;
+}
+
+.main-img {
+  width: 100%;
+  
+}
+
+@keyframes mainImgChange {
+  from {
+    opacity: 0.5;
+  }
+}
+
+
+.main-img img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+/* main-contents */
+
+.main-contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.name-group {
+  display: flex;
+  justify-content: center;
+}
+
+.main-contents h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+#main-content-text {
+  width: 100%;
+  height: 90%;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+  background-image: url(./assets/000.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 650px 780px;
+  color: #826E6C;
+  resize: none;
+}
+
+#dear-name,
+#end-name {
+  width: 150px;
+  font-family: 'Gowun Batang', serif;
+  font-size: 20px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: auto;
+}
+
+.img-group {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.img-group li {
+  display: block;
+  margin-right: 10px;
+}
+
+.img-group li img {
+  display: block;
+  width: 100px;
+  height: 140px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.img-group li img:hover {
+  opacity: 0.5;
+}
+
+
+.action-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-group {
+  margin-left: 20px;
+}
+
+button {
+  font-size: 24px;
+  border: none;
+  color: #705F5D;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: all 400ms ease-in;
+  outline: none;
+}
+
+.button-group button:nth-child(1):hover {
+  color: #07c824;
+}
+
+.button-group button:nth-child(2):hover {
+  color: #FF9898;
+}
+
+.button-group button:nth-child(3):hover {
+  color: #FF3333;
+}
+
+.email-group {
+  display: flex;
+  align-items: center;
+}
+
+.email-group button:hover {
+  color: #067ed4;
+}
+
+#email {
+  font-size: 18px;
+  padding: 2px 10px;
+  color: #705F5D;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+
+
+
+body::after {
+  content: "NOHJAEHEE©";
+  display: block;
+  text-align: center;
+  font-family: 'Gowun Batang', serif;
+  margin-top: 50px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* width: 768px 미만일때 */
+
+@media screen and (max-width: 767px) {
+  .all-group {
+    height: fit-content;
+  }
+  .main {
+    position: relative;
+    width: 70%;
+    max-width: 420px;
+    height: 70vh;
+    margin: auto;
+  }
+
+  .main-contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #main-content-text {
+    opacity: 0.8;
+  }
+
+  .name-group input {
+    color: #fff;
+  }
+
+}
+
+/* width: 576px 미만일때 */
+@media screen and (max-width: 575px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .main {
+    position: relative;
+    width: 90%;
+    max-width: 420px;
+    height: 70vh;
+    margin: auto;
+  }
+
+  
+  .main-contents h2 {
+    font-size: 16px;
+  }
+
+  .name-group input {
+    color: #fff;
+  }
+
+  .action-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-group {
+    margin: 0;
+  }
+
+  .button-group button {
+    padding: 0 20px;
+  }
+
+  .email-group {
+    margin-bottom: 10px;
+  }
+
+}
