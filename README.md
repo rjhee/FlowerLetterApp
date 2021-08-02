@@ -6,6 +6,10 @@
     <li>flower letter app 링크로 공유하기(not yet)</li>
     <li>휴지통 버튼 누르면 작성한내용 리셋</li>
   </ul>
-<h1>미리보기</h1>
+ <h2>mobile</h2>
+<img width="558" alt="flowerletter" src="https://user-images.githubusercontent.com/87287296/127834942-50661c1f-42e9-420e-a482-c5649e9413e8.png">
+<h2>descktop</h2>
 <img width="558" alt="flowerletter" src="https://user-images.githubusercontent.com/87287296/127772503-97e1985f-6c45-442b-bb8c-da8ceb17cafd.png">
+
+
 
